@@ -34,9 +34,6 @@ public class TimeController {
 		this.timeRepo = timeRepository;
 		this.membroRepo = membroRepository;
 		this.pagedResourcesAssembler = assembler;
-		this.timeRepo.save(new Time("alfa"));
-		this.timeRepo.save(new Time("bravo"));
-		this.timeRepo.save(new Time("charlie"));
 	}
 
 	@RequestMapping(value = "/time/filtrarPorNome", method = RequestMethod.GET)

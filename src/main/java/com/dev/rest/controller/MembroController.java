@@ -28,11 +28,6 @@ public class MembroController {
 	public MembroController(MembroRepository membroRepo, PagedResourcesAssembler assembler){
 		this.membroRepo = membroRepo;
 		this.pagedResourcesAssembler = assembler;
-		List<Membro> ms = new ArrayList<>();
-		for(int i = 0; i< 1000; i++){
-			ms.add(new Membro(i+"-"+i));
-		}
-		membroRepo.save(ms);
 	}
 	@RequestMapping(value="/membro/filtrarPorNome",method = RequestMethod.GET)
 	@ResponseBody
