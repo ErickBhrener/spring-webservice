@@ -1,5 +1,6 @@
 API path:
   - /api
+  
 To see the version:
   - /api/profile
   - this resource is available to all users
